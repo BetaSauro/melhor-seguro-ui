@@ -1,0 +1,607 @@
+/* Body */
+
+.main-section {
+  background-image: linear-gradient(to right, var(--tertiary), var(--quarter));
+  padding-bottom: 30px;
+}
+
+.logo-section {
+  background-color: var(--primary);
+}
+
+.insurance-section,
+.support-section,
+.worth-section {
+  padding: 50px 0;
+}
+
+.insurance-section p {
+  font-size: 1.3125em;
+}
+
+.features-section .arrows {
+  font-size: 52px;
+  cursor: pointer;
+}
+
+.news-section figure {
+  margin: 0;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 20%);
+  padding: 25px;
+}
+
+.card form {
+  flex-flow: column;
+  width: 100%;
+}
+
+.card .input-wrapper {
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: var(--secondary);
+  height: 3em;
+  /* padding: 0 15px; */
+}
+
+.card .input-wrapper:not(:first-child) {
+  margin-top: 20px;
+}
+
+.card .material-icons-outlined {
+  margin-right: 10px;
+}
+
+.saly-image {
+  justify-self: center;
+}
+
+/* Inputs */
+
+.input-wrapper > label {
+  padding: 0 15px;
+  width: 100%;
+}
+
+/* Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  width: 100%;
+  height: 3em;
+  padding: 0 4em 0 1em;
+  color: var(--text);
+  background-color: transparent;
+  cursor: pointer;
+}
+.select {
+  padding: 0 15px;
+}
+
+select option {
+  color: inherit;
+}
+select:focus {
+  outline: none;
+}
+select::-ms-expand {
+  display: none;
+}
+
+.select:after {
+  content: "\e5cf";
+  font-family: "Material Icons Outlined";
+  color: var(--secondary);
+  padding: 12px 8px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* End Select */
+
+/* Number */
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  display: inline-flex;
+}
+
+.number-input,
+.number-input * {
+  box-sizing: border-box;
+}
+
+.number-input button {
+  background-color: transparent;
+  border: none;
+
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+}
+
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  font-family: "Material Icons Outlined";
+  content: "\e15b";
+  transform: translate(-50%, -50%) rotate(180deg);
+  color: var(--secondary);
+}
+.number-input button.plus:after {
+  content: "\e145";
+  font-family: "Material Icons Outlined";
+  color: var(--secondary);
+}
+
+.number-input input[type="number"] {
+  max-width: 1em;
+  border: 0;
+  font-size: 1.125em;
+  text-align: center;
+  background-color: transparent;
+  color: var(--text);
+}
+
+/* End Number */
+
+/* Date */
+#boardDate[type="date"]::-webkit-calendar-picker-indicator,
+#unboardDate[type="date"]::-webkit-calendar-picker-indicator {
+  content: "";
+  display: block;
+  background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-32.png)
+    no-repeat;
+  background-size: 16px;
+  background-position: center;
+  right: 0;
+  z-index: 1;
+  position: absolute;
+  margin-right: 6px;
+  width: 16px;
+  height: 16px;
+}
+
+#boardDate:focus-visible,
+#unboardDate:focus-visible {
+  outline: none;
+}
+
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: var(--secondary);
+}
+
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: var(--text);
+  border: none;
+  background: transparent;
+  padding: 5px;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+input[type="date"],
+focus {
+  color: #95a5a6;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+/* End Date */
+
+/* Button */
+
+input[type="submit"] {
+  appearance: none;
+  border: 0;
+}
+
+.btn {
+  padding: 15px 35px;
+  color: #fff;
+  border-radius: 5px;
+  height: fit-content;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.input-submit {
+  border: 2px var(--primary);
+  color: #fff;
+  height: 100%;
+  padding: 17px 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* End Button */
+
+/*  */
+
+.input-text {
+  appearance: none;
+  border: 2px solid var(--primary);
+  margin: 0;
+  padding: 15px 15px;
+  width: 100%;
+  outline: none;
+}
+
+/*  */
+
+/* Checkbox  */
+
+.checkbox {
+  margin: 15px auto;
+  position: relative;
+  display: block;
+  width: 35%;
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+.checkbox label {
+  position: relative;
+  color: var(--secondary);
+}
+.checkbox label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.28s ease;
+  border-radius: 3px;
+  border: 2px solid var(--secondary);
+}
+.checkbox label:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 5px;
+  border-bottom: 2px solid var(--secondary);
+  border-left: 2px solid var(--secondary);
+  -webkit-transform: rotate(-45deg) scale(0);
+  transform: rotate(-45deg) scale(0);
+  transition: transform ease 0.25s;
+  will-change: transform;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.checkbox input[type="checkbox"]:checked ~ label::before {
+  color: var(--secondary);
+}
+
+.checkbox input[type="checkbox"]:checked ~ label::after {
+  -webkit-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
+}
+
+.checkbox label {
+  min-height: 34px;
+  display: block;
+  padding-left: 40px;
+  cursor: pointer;
+}
+.checkbox label span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: 0;
+}
+/* End Checkbox */
+
+/* End Inputs */
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: var(--primary);
+  opacity: 0.5;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  opacity: 1;
+}
+
+.insurance-section,.worth-section{
+  padding: 50px;
+}
+
+.insurance-section,.worth-section{
+  text-align: center;
+}
+
+.support-wrapper,
+.worth-wrapper {
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.support-wrapper h1,
+.worth-wrapper h1 {
+  font-size: 3.75em;
+  margin: 0;
+}
+
+.dubai {
+  background-color: var(--primary);
+  color: #fff;
+  background-image: url("../assets/dubai.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.eua {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  background-image: url("../assets/statue-of-liberty.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.worth-wrapper {
+  color: #fff;
+}
+
+.us,
+.dubai {
+  grid-column: 2 / span 5;
+}
+
+.eu,
+.eua {
+  grid-column: 7 / span 5;
+}
+
+.news-wrapper .checkbox {
+  width: 100%;
+}
+
+.news-wrapper span {
+  color: var(--text);
+}
+
+/* End Body */
+
+/* Navigation */
+
+.nav-wrapper {
+  justify-content: space-between;
+}
+
+.nav {
+  position: relative;
+  background-image: linear-gradient(to right, var(--secondary), var(--primary));
+  padding: 10px;
+}
+
+.nav .nav-header {
+  display: inline;
+}
+
+.nav .nav-header .nav-logo {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav .nav-btn {
+  display: none;
+}
+
+.nav .nav-links {
+  float: right;
+  font-size: 18px;
+  z-index: 5;
+}
+
+.nav .nav-links a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav #nav-check {
+  display: none;
+}
+
+.nav .profile {
+  padding: 15px;
+}
+
+/* End Navigation */
+
+/* Footer */
+
+footer {
+  background-color: #eee;
+}
+
+footer p,
+footer a {
+  color: var(--text);
+}
+
+footer .title {
+  color: var(--primary);
+}
+
+footer figure {
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.footer-wrapper > div {
+  padding: 25px;
+}
+
+footer .round {
+  border-radius: 50%;
+  color: #fff;
+  width: 3.25em;
+  height: 3.25em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  cursor: pointer;
+}
+
+footer .round i,
+footer .round span {
+  color: #fff;
+  font-size: 2em;
+}
+
+hr {
+  border-top: 1px solid var(--primary);
+  margin: 30px;
+}
+
+.main-form{
+  grid-column: span 6;
+}
+
+.submit-wrapper {
+  flex-flow: row;
+}
+
+.dot{
+  display: none;
+}
+
+
+
+
+/*  */
+
+.slider {
+  text-align: center;
+}
+
+.slides {
+  display: flex;
+
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+
+  background: transparent;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+
+  background-color: var(--primary);
+  opacity: 0.5;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+.slider-links{
+  display: none;
+  background-color: #fff;
+  padding: 10px;
+
+}
+
+.features-section p.text{
+  max-width: 400px;
+}

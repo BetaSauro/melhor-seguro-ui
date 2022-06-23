@@ -1,0 +1,161 @@
+@media (max-width: 600px) {
+  .nav .nav-btn {
+    display: inline-block;
+    align-self: center;
+    right: 0px;
+    top: 0px;
+    margin-right: 10px;
+    margin-top: 6px;
+    cursor: pointer;
+  }
+  .nav .nav-btn label {
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav .nav-btn label span {
+    display: block;
+    width: 35px;
+    height: 10px;
+    border-top: 2px solid #eee;
+    cursor: pointer;
+  }
+  .nav .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(
+      to right,
+      var(--secondary),
+      var(--primary)
+    );
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 110px;
+    left: 0px;
+  }
+  .nav .nav-links a {
+    display: block;
+    width: 100%;
+  }
+  .nav #nav-check:not(:checked) .nav-menu ~ .nav-links {
+    height: 0px;
+  }
+  .nav #nav-check:checked ~ .nav-menu .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  .saly-image {
+    display: none;
+  }
+
+  .logo-section > div {
+    flex-flow: column;
+  }
+
+  .main-form {
+    grid-column: 2 / span 10;
+  }
+
+  .submit-wrapper {
+    flex-flow: column-reverse;
+  }
+
+  .checkbox {
+    width: 100%;
+  }
+
+  .main-section .btn {
+    width: 100%;
+  }
+
+  .features-section .arrows {
+    display: none;
+  }
+
+  .feature-wrapper {
+    flex-flow: column;
+  }
+
+  .dot {
+    display: inline-block;
+  }
+
+  .support-section .row.grid {
+    flex-flow: column;
+  }
+
+  .eua,
+  .dubai {
+    grid-column: 2 / span 10;
+  }
+  .us,
+  .eu {
+    grid-column: 1 / span 11;
+  }
+
+  .footer-wrapper {
+    flex-flow: column;
+  }
+
+  .footer-wrapper > div:first-child {
+    align-self: center;
+  }
+
+  .social-wrapper {
+    flex-flow: row-reverse;
+  }
+
+  .copyright-wrapper {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .news-section > div {
+    flex-flow: column-reverse;
+    padding: 50px;
+  }
+
+  .news-wrapper > div {
+    flex-flow: column;
+  }
+
+  .input-text {
+    width: unset;
+  }
+
+  .input-submit {
+    margin-top: 20px;
+  }
+
+  .news-wrapper input {
+    border-radius: 5px;
+  }
+
+  .slider-links {
+    display: block;
+  }
+
+  .slides > div {
+    width: 300px;
+    height: 300px;
+    font-size: 100px;
+  }
+
+  .features-section .slides > div {
+    width: 400px;
+    height: 400px;
+    font-size: unset;
+  }
+
+  .features-section .slider {
+    width: 400px;
+  }
+
+  .slider {
+    width: 300px;
+    overflow: hidden;
+  }
+}
